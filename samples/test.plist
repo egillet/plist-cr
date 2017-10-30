@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>string</key>
+    <string>string sample</string>
+
+	<key>integer</key>
+    <integer>1</integer>
+    
+	<key>date</key>
+    <date>2017-10-30T19:54:43Z</date>
+    
+    <key>embedded dict</key>
+    <dict>
+        <key>k</key><string>test</string>
+    </dict>
+    
+    <key>array</key>
+    <array>
+        <integer>-1</integer>
+        <string>one</string>
+    </array>
+
+    <key>boolean true</key>
+    <true/>
+
+    <key>boolean false</key>
+    <false/>
+    
+    <key>real</key>
+    <real>3.1415926535</real>
+    
+    <key>base64</key>
+    <data>
+    dGhpcyBpcyBhIGJhc2U2NCBzdHJpbmcgd2ljaCBpcyB2ZXJ5IGxv
+    bmcgdW5sZXNzIHlvdSBhcmUgbm90IHVzZWQgdG8gdHdpdHRlcgo=
+    </data>
+
+</dict>
+</plist>
