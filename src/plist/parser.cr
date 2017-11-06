@@ -128,7 +128,8 @@ module PList
   private def self.to_data(node)
     cnt = node.content
     if cnt
-      Base64.decode(cnt.gsub(" ", ""))
+      c = gsub(/\s/, "")
+      Base64.decode(c)
     else
       nil
     end
