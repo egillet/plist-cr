@@ -1,9 +1,9 @@
 name: plist-cr
-version: 0.1.0
+version: 0.2.0
 
 authors:
   - Eric Gillet <eric.gillet@netaxis.be>
 
-crystal: 0.23.1
+crystal: 0.31.1
 
 license: MIT

@@ -119,7 +119,7 @@ module PList
   private def self.to_date(node)
     cnt = node.content
     if cnt
-      Time.parse(cnt, DATE_FORMAT)
+      Time.parse(cnt, DATE_FORMAT, Time::Location::UTC)
     else
       nil
     end
