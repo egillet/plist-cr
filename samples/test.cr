@@ -4,7 +4,11 @@ File.open("samples/test.plist") do |file|
   plist = PList.parse(file)
   puts "io_plist: #{plist}"
   puts "conversion to XML"
-  puts plist.to_plist
+  if plist
+    puts plist.to_plist
+  else
+    puts "empty plist (from file)"
+  end
 end
 
 xml = <<-XML
@@ -32,4 +36,8 @@ XML
 plist = PList.parse(xml)
 puts "string plist: #{plist}"
 puts "conversion to XML"
-puts plist.to_plist
+if plist
+  puts plist.to_plist
+else
+  puts "empty plist (from string)"
+end

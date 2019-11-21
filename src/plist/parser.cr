@@ -49,7 +49,7 @@ module PList
         raise "unknow node #{node.name}"
       end
     else
-      nil
+      raise "invalid empty node"
     end
   end
 
@@ -121,7 +121,7 @@ module PList
     if cnt
       Time.parse(cnt, DATE_FORMAT, Time::Location::UTC)
     else
-      nil
+      raise "invalid empty date node"
     end
   end
 
@@ -131,7 +131,7 @@ module PList
       c = cnt.gsub(/\s/, "")
       Base64.decode(c)
     else
-      nil
+      raise "invalid empty data node"
     end
   end
 end
